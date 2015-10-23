@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
+
+    <script>
+        var contactName = document.getElementById('contactName')
+        contactName.oninvalid = function (e) {
+            e.target.setCustomValidity("");
+            if (!e.target.validity.valid) {
+                if (e.target.value.length == 0) {
+                    e.target.setCustomValidity("Contact name is required.");
+                } else if (e.target.value.length < 5) {
+                    e.target.setCustomValidity("Contact name must be at least characters.");
+                }
+            }
+        };
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
