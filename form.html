@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <title>Formulario</title>
+
+
+    <style type="text/css">
+        body{
+            background-color: #dbdfe5;
+        }
+        fieldset{border: groove;
+            border-color: black;
+            padding: 15px;
+        }
+        .demo-content{
+            padding: 15px;
+            font-size: 18px;
+            min-height: 150px;
+            background: dodgerblue;
+            margin-bottom: 10px;
+        }
+        .demo-content.bg-alt{
+            padding: 15px;
+            font-size: 18px;
+            min-height: 500px;
+            background: #dbdfe5;
+            margin-bottom: 10px;
+        }
+        footer .demo-content{
+            padding: 15px;
+            font-size: 18px;
+            min-height: 100px;
+            background: burlywood;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid" >
+
+    <header class="row">
+        <div class="col-lg-12">
+            <div class="demo-content">cabecera</div>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="demo-content bg-alt">
+                <form>
+                    <fieldset>
+                        <legend>Personal information:</legend>
+                        <label for="firstname">First name:</label>
+                        <br>
+                        <input type="text" name="gender" value="" id="firstname"  placeholder=" Your Name">
+                        <br>
+                        <label for="lastname">Last name:</label>
+                        <br>
+                        <input type="text" name="gender" value="" id="lastname" placeholder=" Your Last Name">
+                        <br>
+                        <label for="salary">Salary:</label>
+                        <br>
+                        <input type="number" id="salary" name="points" min="0" max="9999999" step="500" value="1000" placeholder=" Your salary">
+                        <br>
+                        <label for="birthday">Birth Day:</label>
+                        <br>
+                        <input type="date" name="bday" id="birthday" placeholder=" Your Birth Day" value="">
+                        <br><br>
+                    </fieldset>
+
+                    <br><br>
+
+                    <fieldset>
+                        <legend>Aditional information:</legend>
+
+                        <br>
+                            <label for="male">Male</label>
+                            <input checked="" name="gender" id="male" value="male" type="radio">
+                            <label for="female">Female</label>
+                            <input name="gender" id="female" value="female" type="radio"><br>
+                             <br><label for="message">Comentario</label><br>
+
+                        <textarea rows="5" cols="30" placeholder="enter optional message" id="message"></textarea><br />
+                        <br><br>
+
+                        <label for="suscribe">Mark the checkbox to suscribe to newsletter</label>
+                        <input type="checkbox" name="suscribe" id="suscribe" value="Suscribeme">
+                        <br>
+                    </fieldset>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="demo-content bg-alt"></div>
+        </div>
+    </div>
+    <footer class="row">
+        <div class="col-lg-12">
+            <div class="demo-content">footer</div>
+        </div>
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>
